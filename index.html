@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Lautenbach's Orchard Country &middot; 70 Years, 4 Generations &middot; Search-Visibility Audit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --amber: #b8761d;
+    --amber-deep: #8a5614;
+    --amber-soft: #d99a3e;
+    --sage: #6b7d5c;
+    --sage-deep: #4a5a3e;
+    --cream: #faf6ee;
+    --cream-warm: #f3ebd9;
+    --ink: #2a221a;
+    --ink-soft: #4d4135;
+    --line: #d9cdb4;
+    --rust: #a14a2a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.65;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    color: var(--ink);
+    letter-spacing: 0.005em;
+    line-height: 1.2;
+  }
+  h1 { font-size: 3.1rem; font-weight: 700; }
+  h2 { font-size: 2.3rem; font-weight: 600; margin-bottom: 1.4rem; }
+  h3 { font-size: 1.55rem; font-weight: 600; margin-bottom: 0.9rem; }
+  h4 { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.6rem; font-family: 'Inter', sans-serif; }
+  p { margin-bottom: 1rem; color: var(--ink-soft); }
+  a { color: var(--amber-deep); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 2rem; }
+  .narrow { max-width: 880px; margin: 0 auto; padding: 0 2rem; }
+
+  /* HEADER */
+  header {
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .brand span { color: var(--amber); }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  nav a {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  nav a:hover { color: var(--amber); text-decoration: none; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--cream-warm) 0%, var(--cream) 60%);
+    padding: 5.5rem 0 4.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-tag {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--amber-deep);
+    margin-bottom: 1.5rem;
+    padding: 0.4rem 0.9rem;
+    background: rgba(184, 118, 29, 0.08);
+    border-left: 3px solid var(--amber);
+  }
+  .hero h1 {
+    margin-bottom: 1.5rem;
+    max-width: 850px;
+  }
+  .hero h1 em { font-style: normal; color: var(--amber-deep); }
+  .hero-sub {
+    font-size: 1.18rem;
+    max-width: 720px;
+    color: var(--ink-soft);
+    margin-bottom: 2.5rem;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .stat {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--amber);
+    padding: 1.8rem 1.5rem;
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--amber-deep);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .stat-label {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+
+  /* TRUST BAND */
+  .trust {
+    background: var(--sage-deep);
+    color: var(--cream);
+    padding: 1.4rem 0;
+    font-size: 0.92rem;
+    text-align: center;
+  }
+  .trust-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem 1.6rem;
+  }
+  .trust-inner span { color: rgba(250, 246, 238, 0.92); }
+
+  /* SECTIONS */
+  section { padding: 5rem 0; }
+  .section-eyebrow {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 0.8rem;
+  }
+  .section-intro {
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+    max-width: 720px;
+    margin-bottom: 2.5rem;
+  }
+
+  /* ABOUT / FAMILY */
+  .family-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  .family-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .portrait {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    background: linear-gradient(135deg, var(--cream-warm), var(--amber-soft));
+    border: 2px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: var(--amber-deep);
+    font-weight: 600;
+  }
+  .family-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+  }
+  .family-role {
+    font-size: 0.85rem;
+    color: var(--amber-deep);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+  }
+  .family-note {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+  .gen-label {
+    display: inline-block;
+    background: var(--sage);
+    color: var(--cream);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.7rem;
+    margin-bottom: 0.7rem;
+    border-radius: 2px;
+  }
+  .gen-label.gen2 { background: var(--rust); }
+  .gen-label.gen1 { background: var(--amber-deep); }
+
+  /* OPERATIONS GRID */
+  .ops-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.4rem;
+    margin-top: 2.5rem;
+  }
+  .op-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: 1.8rem 1.6rem;
+    transition: border-color 0.2s ease;
+  }
+  .op-card:hover { border-color: var(--amber); }
+  .op-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: var(--amber);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+  }
+  .op-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+  }
+  .op-card p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    position: relative;
+    margin-top: 3rem;
+    padding-left: 2rem;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: var(--amber-soft);
+  }
+  .timeline-item {
+    position: relative;
+    padding-bottom: 1.8rem;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--amber);
+    border: 3px solid var(--cream);
+    box-shadow: 0 0 0 1px var(--amber);
+  }
+  .timeline-year {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--amber-deep);
+    margin-bottom: 0.2rem;
+  }
+  .timeline-body {
+    color: var(--ink-soft);
+    font-size: 0.97rem;
+    margin-bottom: 0;
+  }
+
+  /* AUDIT TABLE */
+  .audit-wrap {
+    background: #fff;
+    border: 1px solid var(--line);
+    margin-top: 2.5rem;
+    overflow-x: auto;
+  }
+  table.audit {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.93rem;
+  }
+  table.audit th {
+    background: var(--sage-deep);
+    color: var(--cream);
+    text-align: left;
+    padding: 1rem 1.2rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  table.audit td {
+    padding: 1rem 1.2rem;
+    border-top: 1px solid var(--line);
+    vertical-align: top;
+    color: var(--ink-soft);
+  }
+  table.audit tr:nth-child(even) td { background: var(--cream-warm); }
+  .score-zero {
+    display: inline-block;
+    background: var(--rust);
+    color: #fff;
+    padding: 0.15rem 0.65rem;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .score-one {
+    display: inline-block;
+    background: var(--amber);
+    color: #fff;
+    padding: 0.15rem 0.65rem;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .query-cell { font-weight: 500; color: var(--ink); }
+
+  /* BUILD LIST */
+  .build-section { background: var(--cream-warm); }
+  .build-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.4rem;
+    margin-top: 2.5rem;
+  }
+  .build-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--amber);
+    padding: 1.6rem 1.5rem;
+  }
+  .build-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: var(--amber-deep);
+    margin-bottom: 0.5rem;
+  }
+  .build-card p {
+    font-size: 0.93rem;
+    margin-bottom: 0;
+  }
+  .build-card code {
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 0.85rem;
+    background: var(--cream-warm);
+    padding: 0.1rem 0.4rem;
+    color: var(--ink);
+    border-radius: 2px;
+  }
+
+  /* WHY NOW */
+  .whynow {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 5rem 0;
+  }
+  .whynow h2 { color: var(--cream); }
+  .whynow p { color: rgba(250, 246, 238, 0.85); }
+  .whynow .section-eyebrow { color: var(--amber-soft); }
+  .whynow-list {
+    list-style: none;
+    margin-top: 2rem;
+  }
+  .whynow-list li {
+    padding: 1rem 0 1rem 2.2rem;
+    border-top: 1px solid rgba(250, 246, 238, 0.15);
+    position: relative;
+    color: rgba(250, 246, 238, 0.92);
+    font-size: 1.02rem;
+  }
+  .whynow-list li:last-child { border-bottom: 1px solid rgba(250, 246, 238, 0.15); }
+  .whynow-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    width: 12px;
+    height: 12px;
+    background: var(--amber);
+    transform: rotate(45deg);
+  }
+
+  /* FAQ */
+  .faq-wrap { margin-top: 2.5rem; }
+  details {
+    background: #fff;
+    border: 1px solid var(--line);
+    margin-bottom: 0.7rem;
+    padding: 0;
+  }
+  details summary {
+    padding: 1.2rem 1.4rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--ink);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    list-style: none;
+    position: relative;
+    padding-right: 3rem;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::after {
+    content: '+';
+    position: absolute;
+    right: 1.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    color: var(--amber);
+    font-weight: 400;
+  }
+  details[open] summary::after { content: '\2212'; }
+  details > p {
+    padding: 0 1.4rem 1.3rem;
+    font-size: 0.97rem;
+    margin: 0;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--sage-deep);
+    color: var(--cream);
+    padding: 3.5rem 0 2rem;
+    margin-top: 2rem;
+  }
+  footer h4 {
+    color: var(--cream);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  footer p { color: rgba(250, 246, 238, 0.82); margin-bottom: 0.5rem; }
+  footer a {
+    color: var(--amber-soft);
+    font-weight: 500;
+  }
+  footer a:hover { color: var(--cream); }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footer-bottom {
+    border-top: 1px solid rgba(250, 246, 238, 0.2);
+    padding-top: 1.5rem;
+    font-size: 0.85rem;
+    color: rgba(250, 246, 238, 0.7);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .sign-off {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    color: var(--cream);
+  }
+
+  /* MEMORIAM NOTE */
+  .in-memoriam {
+    background: var(--cream-warm);
+    border-left: 3px solid var(--sage);
+    padding: 1.2rem 1.4rem;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+  }
+  .in-memoriam strong {
+    color: var(--ink);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+  }
+
+  @media (max-width: 720px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    nav ul { gap: 1rem; font-size: 0.85rem; }
+    .stats { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    section { padding: 3.5rem 0; }
+    .hero { padding: 3.5rem 0 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav-wrap">
+    <div class="brand">Lautenbach's <span>Orchard Country</span></div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#operations">Operations</a></li>
+        <li><a href="#audit">Audit</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-tag">Search-Visibility Audit &middot; Fish Creek, WI</div>
+    <h1>70 years. 4 generations. 100 acres. 5 operations.<br><em>Zero of five AI engines tell this story.</em></h1>
+    <p class="hero-sub">An independent review of how Lautenbach's Orchard Country appears in ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews for the queries Door County visitors are asking right now.</p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">70</div>
+        <div class="stat-label">Years on Highway 42</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Generations Lautenbach</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Product Lines, One Estate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="container trust-inner">
+    <span>Bill + Ruth Lautenbach, founders 1955</span>
+    <span>&middot;</span>
+    <span>100-acre Door County estate</span>
+    <span>&middot;</span>
+    <span>Gen 3 active: Erin, Carrie, Chris, Melissa</span>
+    <span>&middot;</span>
+    <span>50 award-winning wines</span>
+    <span>&middot;</span>
+    <span>Orchard + Winery + Cidery + Bakery + Market</span>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container">
+    <div class="section-eyebrow">The Family</div>
+    <h2>Four generations, one orchard, one highway address.</h2>
+    <p class="section-intro">Bill and Ruth Lautenbach planted the first cherry trees on a 100-acre stretch of Door County peninsula in 1955. Seventy years later, four generations of the same family still steward the same ground &middot; the same restored dairy-barn winery &middot; the same orchard rows.</p>
+
+    <div class="in-memoriam">
+      <strong>In Memoriam &middot; Robert "Bob" Lautenbach</strong><br>
+      Bob, second-generation steward of Orchard Country, passed in July 2021. The Lautenbach family continues the work he carried forward from his parents Bill and Ruth, and any retelling of the family's story on the rebuilt site will use only the family's own published wording about Bob's life and legacy.
+    </div>
+
+    <div class="family-grid">
+
+      <div class="family-card">
+        <div class="portrait">B&middot;R</div>
+        <div class="gen-label gen1">Gen 1</div>
+        <div class="family-name">Bill + Ruth Lautenbach</div>
+        <div class="family-role">Founders, 1955</div>
+        <div class="family-note">Planted the first 100 acres on Highway 42, half a mile south of Fish Creek.</div>
+      </div>
+
+      <div class="family-card">
+        <div class="portrait">B</div>
+        <div class="gen-label gen2">Gen 2</div>
+        <div class="family-name">Robert "Bob" Lautenbach</div>
+        <div class="family-role">In Memoriam &middot; July 2021</div>
+        <div class="family-note">Carried the orchard forward into its second generation. Remembered in the family's own words on the rebuilt site.</div>
+      </div>
+
+      <div class="family-card">
+        <div class="portrait">E</div>
+        <div class="gen-label">Gen 3</div>
+        <div class="family-name">Erin Lautenbach</div>
+        <div class="family-role">General Manager &middot; Owner</div>
+        <div class="family-note">Leads day-to-day operations across orchard, winery, cidery, bakery, and market.</div>
+      </div>
+
+      <div class="family-card">
+        <div class="portrait">C</div>
+        <div class="gen-label">Gen 3</div>
+        <div class="family-name">Carrie Lautenbach-Viste</div>
+        <div class="family-role">Director, Sales + Marketing</div>
+        <div class="family-note">Leads brand, retail, and visitor-experience programs across the five operations.</div>
+      </div>
+
+      <div class="family-card">
+        <div class="portrait">C</div>
+        <div class="gen-label">Gen 3</div>
+        <div class="family-name">Chris Lautenbach</div>
+        <div class="family-role">Family Steward</div>
+        <div class="family-note">Active in the family's third-generation stewardship of the estate.</div>
+      </div>
+
+      <div class="family-card">
+        <div class="portrait">M</div>
+        <div class="gen-label">Gen 3</div>
+        <div class="family-name">Melissa Lautenbach</div>
+        <div class="family-role">Family Steward</div>
+        <div class="family-note">Active in the family's third-generation stewardship of the estate.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="operations" style="background: var(--cream-warm);">
+  <div class="container">
+    <div class="section-eyebrow">Five Operations, One Estate</div>
+    <h2>An orchard, a barn, a market, and everything that grows in between.</h2>
+    <p class="section-intro">Most Door County visitors discover Orchard Country as a single category &middot; "the winery," "the bakery," "the market." The destination is all five, on the same 100 acres, under the same family.</p>
+
+    <div class="ops-grid">
+
+      <div class="op-card">
+        <div class="op-num">01</div>
+        <h3>The Orchard</h3>
+        <p>100 acres of Door County peninsula in cherry, apple, and seasonal fruit, planted by Bill and Ruth in 1955 and stewarded by the family ever since.</p>
+      </div>
+
+      <div class="op-card">
+        <div class="op-num">02</div>
+        <h3>The Winery</h3>
+        <p>Built inside a restored Door County dairy barn. 50 award-winning wines produced and poured on the estate, with a tasting room open to visitors.</p>
+      </div>
+
+      <div class="op-card">
+        <div class="op-num">03</div>
+        <h3>The Cidery</h3>
+        <p>Hard cider produced on the same grounds the apples grow on. A Door County orchard-to-glass program rather than a contract-brewed retail label.</p>
+      </div>
+
+      <div class="op-card">
+        <div class="op-num">04</div>
+        <h3>The Bakery</h3>
+        <p>Pies, breads, and Door County cherry baked goods produced on-site for the market shelves and the tasting room.</p>
+      </div>
+
+      <div class="op-card">
+        <div class="op-num">05</div>
+        <h3>The Market + Tasting Room</h3>
+        <p>The retail face of all four upstream operations &middot; orchard fruit, estate wine, hard cider, fresh baked goods &middot; under one roof on Highway 42.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="narrow">
+    <div class="section-eyebrow">Seventy Years on Highway 42</div>
+    <h2>The story Door County visitors should be able to find in two clicks.</h2>
+    <p class="section-intro">A working timeline of how Orchard Country has grown from a single planting to a five-operation family estate. This is what schema markup should make machine-readable.</p>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-year">1955</div>
+        <p class="timeline-body">Bill and Ruth Lautenbach plant the orchard on 100 acres at 9197 State Highway 42, half a mile south of Fish Creek.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">Mid-Century</div>
+        <p class="timeline-body">Second-generation stewardship under Bob Lautenbach. The orchard continues as a Door County family farm through decades of seasonal harvests.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">Winery Era</div>
+        <p class="timeline-body">A restored Door County dairy barn on the property becomes the home of the family winery. The estate grows from orchard-only into orchard + winemaking.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">Cidery Era</div>
+        <p class="timeline-body">A hard cider operation joins the winery on the same grounds, turning the family's apples into estate-pressed cider.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">Bakery + Market Expansion</div>
+        <p class="timeline-body">An on-site bakery and a year-round market round out the visitor experience. The five operations now live together under one roof.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">July 2021</div>
+        <p class="timeline-body">Bob Lautenbach passes. The family continues the orchard, the winery, the cidery, the bakery, and the market under third-generation leadership.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">Today &middot; 2025</div>
+        <p class="timeline-body">Erin Lautenbach (General Manager + Owner), Carrie Lautenbach-Viste (Director of Sales + Marketing), Chris, and Melissa lead the third generation. 70 years on the same Highway 42 address.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="audit" style="background: var(--cream-warm);">
+  <div class="container">
+    <div class="section-eyebrow">The Audit</div>
+    <h2>Five queries. Five AI engines. The Lautenbach family is almost invisible in all of them.</h2>
+    <p class="section-intro">Each query below was run across ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews. A "citation" means the engine surfaced Lautenbach's Orchard Country by name in its answer to a visitor's question. Score is out of 5.</p>
+
+    <div class="audit-wrap">
+      <table class="audit">
+        <thead>
+          <tr>
+            <th>Query a Door County visitor types</th>
+            <th>Engines citing Lautenbach</th>
+            <th>What gets cited instead</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="query-cell">"best Door County winery family-owned"</td>
+            <td><span class="score-zero">0 / 5</span></td>
+            <td>Generic Door County tourism roundups and competitor wineries with stronger structured data.</td>
+          </tr>
+          <tr>
+            <td class="query-cell">"Fish Creek orchard cidery winery"</td>
+            <td><span class="score-zero">0 / 5</span></td>
+            <td>Door County visitor-bureau listicles. No engine connects the three categories to one estate.</td>
+          </tr>
+          <tr>
+            <td class="query-cell">"Lautenbach family 4 generations Door County"</td>
+            <td><span class="score-one">1 / 5</span></td>
+            <td>A single brand-name match. Family lineage and 1955 founding date are not surfaced.</td>
+          </tr>
+          <tr>
+            <td class="query-cell">"Door County winery dairy barn"</td>
+            <td><span class="score-zero">0 / 5</span></td>
+            <td>Other Wisconsin wineries with barn imagery in their schema. The restored-barn story is invisible.</td>
+          </tr>
+          <tr>
+            <td class="query-cell">"Wisconsin cherry orchard winery cider"</td>
+            <td><span class="score-zero">0 / 5</span></td>
+            <td>Statewide agritourism roundups and competitor cideries with FoodEstablishment markup.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top: 1.8rem; font-size: 0.92rem; color: var(--ink-soft);">Aggregate AI citation rate across five high-intent visitor queries: <strong style="color: var(--rust);">1 of 25 possible citations</strong>. The 70-year heritage, 4-generation family, restored-dairy-barn winery, on-site cidery, on-site bakery, and 50 award-winning wines do not reach the AI layer in any meaningful way.</p>
+  </div>
+</section>
+
+<section class="build-section">
+  <div class="container">
+    <div class="section-eyebrow">The Build</div>
+    <h2>What we'd put on the rebuilt orchardcountry.com to fix this.</h2>
+    <p class="section-intro">A layered schema package that teaches each AI engine the full identity of the estate &middot; the family, the founding date, the five operations, the awards, and the location.</p>
+
+    <div class="build-grid">
+
+      <div class="build-card">
+        <h4>Organization Schema</h4>
+        <p>Top-level <code>Organization</code> with <code>foundingDate</code> "1955-01-01", <code>founder</code> nodes for Bill and Ruth Lautenbach, and connected <code>subOrganization</code> entries for each of the five operations.</p>
+      </div>
+
+      <div class="build-card">
+        <h4>FoodEstablishment Schema</h4>
+        <p><code>FoodEstablishment</code> for the market, tasting room, and bakery face of the property &middot; the public-facing destination at 9197 State Highway 42, Fish Creek WI 54212.</p>
+      </div>
+
+      <div class="build-card">
+        <h4>Vineyard Schema</h4>
+        <p>A dedicated <code>Vineyard</code> entity for the orchard and vine ground itself, linked back to the parent <code>Organization</code> so the orchard is visible as a distinct entity, not just a brand attribute.</p>
+      </div>
+
+      <div class="build-card">
+        <h4>WinemakingFacility Schema</h4>
+        <p><code>WinemakingFacility</code> markup for the restored dairy-barn winery, the production address, and the tasting room. This is the structured-data answer to "Door County winery dairy barn."</p>
+      </div>
+
+      <div class="build-card">
+        <h4>Per-Operation Service Schema</h4>
+        <p>One <code>Service</code> node per product line &middot; orchard, winery, cidery, bakery, market &middot; each tied back to the parent estate. This is how AI engines learn that all five live at one address.</p>
+      </div>
+
+      <div class="build-card">
+        <h4>Person Schema &middot; Gen 1 + Gen 3</h4>
+        <p><code>Person</code> nodes for Bill Lautenbach, Ruth Lautenbach, Erin, Carrie, Chris, and Melissa, each with <code>jobTitle</code> and <code>worksFor</code> pointing back to the parent estate. Bob's profile is included in memoriam framing only.</p>
+      </div>
+
+      <div class="build-card">
+        <h4>Award Schema</h4>
+        <p><code>Award</code> entries representing the 50 award-winning wines as a single, machine-readable credential the family can update on the rebuilt site without code changes.</p>
+      </div>
+
+      <div class="build-card">
+        <h4>LocalBusiness + Geo</h4>
+        <p><code>LocalBusiness</code> with verified <code>address</code> at 9197 State Highway 42, <code>geo</code> coordinates, opening-hours specification, and explicit Fish Creek + Door County region tagging.</p>
+      </div>
+
+      <div class="build-card">
+        <h4>FAQPage Schema</h4>
+        <p>An <code>FAQPage</code> node covering the questions visitors ask AI engines today &middot; family-owned, four-generation, restored-barn, cidery on-site, bakery on-site &middot; so each engine learns the answer in its own format.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="whynow">
+  <div class="container">
+    <div class="section-eyebrow">Why Now</div>
+    <h2 style="max-width: 820px;">Door County's AI search layer is forming this year, not next.</h2>
+    <p style="max-width: 720px; font-size: 1.08rem;">The brands that wire up structured data for AI engines in 2025 become the default citations for 2026 visitor questions. Three reasons the timing matters specifically for Orchard Country.</p>
+
+    <ul class="whynow-list">
+      <li>The 70-year heritage and 4-generation lineage exist in family memory and brand voice &middot; not in a machine-readable form any AI engine can quote.</li>
+      <li>Five operations on one estate is unusual. With no schema layer to teach engines that orchard + winery + cidery + bakery + market = one address, every query splits into a different competitor set.</li>
+      <li>Door County tourism content is being scraped into model training and retrieval indexes in real time. Becoming the cited Lautenbach answer now is cheaper than displacing whichever brand becomes the default later.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="narrow">
+    <div class="section-eyebrow">Frequently Asked</div>
+    <h2>About this audit.</h2>
+
+    <div class="faq-wrap">
+      <details>
+        <summary>How were the five queries chosen?</summary>
+        <p>They were chosen from the highest-intent question patterns Door County visitors use across major AI engines for the orchard, winery, cidery, bakery, and market categories combined. Each query reflects a real visitor decision, not a brand-defensive search.</p>
+      </details>
+
+      <details>
+        <summary>What is "AI Engine Optimization" and how is it different from SEO?</summary>
+        <p>AI Engine Optimization (AEO) is the practice of making a brand's identity, history, location, and offerings legible to large language models the way SEO made them legible to web crawlers. AEO leans heavily on structured data &middot; schema markup &middot; rather than blog volume or backlink count.</p>
+      </details>
+
+      <details>
+        <summary>How is Bob Lautenbach's legacy handled in the rebuild?</summary>
+        <p>Bob's life and legacy are handled with care and respect. The rebuilt site will use only wording the Lautenbach family has already published or approved about Bob. No language is invented, paraphrased, or embellished by us. The family controls the wording. The schema layer is what makes that wording machine-readable.</p>
+      </details>
+
+      <details>
+        <summary>What happens if Orchard Country does nothing?</summary>
+        <p>The Door County winery, cidery, and orchard categories continue to consolidate around whichever brands get cited first by AI engines. Today the family's seven-decade heritage is invisible in those answers. The longer that stays true, the more expensive it becomes to displace whichever brand the engines anchor on instead.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Lautenbach's Orchard Country</h4>
+        <p>9197 State Highway 42</p>
+        <p>Fish Creek, WI 54212</p>
+        <p>Door County peninsula &middot; half a mile south of Fish Creek</p>
+      </div>
+      <div>
+        <h4>Online</h4>
+        <p><a href="https://orchardcountry.com">orchardcountry.com</a></p>
+        <p><a href="https://www.instagram.com/lautenbachsorchardcountry/">Instagram</a></p>
+        <p><a href="https://www.facebook.com/orchardcountry">Facebook</a></p>
+      </div>
+      <div>
+        <h4>This Audit</h4>
+        <p>Prepared independently for the Lautenbach family.</p>
+        <p>No data collected, no tracking, no sign-up.</p>
+        <p><a href="https://andrei170.github.io/ag1/#services" class="sign-off">View build services &rarr;</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2025 &middot; Independent search-visibility audit prepared for Lautenbach's Orchard Country.</div>
+      <div>Not affiliated with Lautenbach's Orchard Country. All family names, dates, and facts published by the family or in public record.</div>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://orchardcountry.com/#organization",
+      "name": "Lautenbach's Orchard Country",
+      "url": "https://orchardcountry.com",
+      "foundingDate": "1955-01-01",
+      "founder": [
+        { "@id": "https://orchardcountry.com/#bill-lautenbach" },
+        { "@id": "https://orchardcountry.com/#ruth-lautenbach" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9197 State Highway 42",
+        "addressLocality": "Fish Creek",
+        "addressRegion": "WI",
+        "postalCode": "54212",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Door County, Wisconsin"
+      },
+      "description": "Four-generation family-owned Door County estate founded by Bill and Ruth Lautenbach in 1955. 100 acres comprising an orchard, a winery housed in a restored dairy barn, a hard cidery, a bakery, and a farm market on Highway 42.",
+      "sameAs": [
+        "https://www.instagram.com/lautenbachsorchardcountry/",
+        "https://www.facebook.com/orchardcountry"
+      ]
+    },
+    {
+      "@type": "FoodEstablishment",
+      "@id": "https://orchardcountry.com/#food-establishment",
+      "name": "Lautenbach's Orchard Country &middot; Market + Tasting Room",
+      "parentOrganization": { "@id": "https://orchardcountry.com/#organization" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9197 State Highway 42",
+        "addressLocality": "Fish Creek",
+        "addressRegion": "WI",
+        "postalCode": "54212",
+        "addressCountry": "US"
+      },
+      "servesCuisine": ["Door County cherry", "Wisconsin orchard", "Bakery", "Wine", "Hard cider"]
+    },
+    {
+      "@type": "Vineyard",
+      "@id": "https://orchardcountry.com/#vineyard",
+      "name": "Lautenbach's Orchard Country Vineyard + Orchard",
+      "parentOrganization": { "@id": "https://orchardcountry.com/#organization" },
+      "foundingDate": "1955-01-01",
+      "areaServed": "Door County, Wisconsin"
+    },
+    {
+      "@type": "WinemakingFacility",
+      "@id": "https://orchardcountry.com/#winery",
+      "name": "Lautenbach's Orchard Country Winery",
+      "parentOrganization": { "@id": "https://orchardcountry.com/#organization" },
+      "description": "Door County winery housed in a restored dairy barn on the family's 100-acre estate. Produces fifty award-winning wines on the property."
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://orchardcountry.com/#local-business",
+      "name": "Lautenbach's Orchard Country",
+      "image": "https://orchardcountry.com",
+      "url": "https://orchardcountry.com",
+      "telephone": "",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9197 State Highway 42",
+        "addressLocality": "Fish Creek",
+        "addressRegion": "WI",
+        "postalCode": "54212",
+        "addressCountry": "US"
+      },
+      "parentOrganization": { "@id": "https://orchardcountry.com/#organization" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orchardcountry.com/#bill-lautenbach",
+      "name": "Bill Lautenbach",
+      "jobTitle": "Founder",
+      "worksFor": { "@id": "https://orchardcountry.com/#organization" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orchardcountry.com/#ruth-lautenbach",
+      "name": "Ruth Lautenbach",
+      "jobTitle": "Founder",
+      "worksFor": { "@id": "https://orchardcountry.com/#organization" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orchardcountry.com/#erin-lautenbach",
+      "name": "Erin Lautenbach",
+      "jobTitle": "General Manager and Owner",
+      "worksFor": { "@id": "https://orchardcountry.com/#organization" },
+      "sameAs": "https://www.linkedin.com/in/erin-lautenbach-ab438433"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orchardcountry.com/#carrie-lautenbach-viste",
+      "name": "Carrie Lautenbach-Viste",
+      "jobTitle": "Director of Sales and Marketing",
+      "worksFor": { "@id": "https://orchardcountry.com/#organization" }
+    },
+    {
+      "@type": "Award",
+      "@id": "https://orchardcountry.com/#wine-awards",
+      "name": "Fifty award-winning wines",
+      "description": "Lautenbach's Orchard Country Winery has produced fifty award-winning wines from its restored dairy-barn winery on the family's 100-acre Door County estate."
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://orchardcountry.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When was Lautenbach's Orchard Country founded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lautenbach's Orchard Country was founded in 1955 by Bill and Ruth Lautenbach on 100 acres at 9197 State Highway 42, half a mile south of Fish Creek, Wisconsin, in Door County."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Lautenbach's Orchard Country still family-owned?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Lautenbach's Orchard Country is four-generation family-owned. The third generation, including Erin Lautenbach (General Manager and Owner) and Carrie Lautenbach-Viste (Director of Sales and Marketing), leads the estate today."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is on the Lautenbach's Orchard Country property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 100-acre estate includes the original orchard, a winery housed in a restored Door County dairy barn, a hard cidery, an on-site bakery, and a year-round farm market with a tasting room. All five operations are at one address."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Lautenbach's Orchard Country located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "9197 State Highway 42, Fish Creek, Wisconsin 54212. The estate is half a mile south of the village of Fish Creek on the Door County peninsula."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
